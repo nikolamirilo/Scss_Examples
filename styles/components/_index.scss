@@ -1,0 +1,53 @@
+.main {
+  background-color: $black;
+  font-size: 2rem;
+  font-weight: $fontWeight;
+  @include flex(column, center, center);
+  @include media($sm) {
+    @include flex(column, flex-start, flex-end);
+  }
+  height: 100vh;
+  @import "./items";
+  @import "./h1";
+  @import "./p";
+  @import "./button";
+
+  .dugme {
+    @include buttonStyle(blue);
+  }
+}
+@include media($md) {
+  .main {
+    background-color: rgb(0, 45, 7);
+    font-size: 1.5rem;
+
+    .button button {
+      width: 100vw;
+      height: 30vh;
+    }
+  }
+}
+
+@include media($sm) {
+  .main {
+    background-color: rgb(45, 4, 0);
+    font-size: 1.5rem;
+
+    .button button {
+      width: 100vw;
+      height: 30vh;
+    }
+  }
+}
+
+@include media($xs) {
+  .main {
+    background-color: rgb(10, 0, 45);
+    font-size: 1.5rem;
+
+    .button button {
+      width: 100vw;
+      height: 30vh;
+    }
+  }
+}

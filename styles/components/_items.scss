@@ -1,0 +1,7 @@
+.items {
+  width: 100vw;
+  height: 20vh;
+  background-color: $yellow;
+  color: $black;
+  @include flex(row, space-around, center);
+}

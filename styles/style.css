@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  background-color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.main .items {
+  width: 100vw;
+  height: 20vh;
+  background-color: #ffc017;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main h1 {
+  color: #f3df05;
+}
+
+.main h1::before {
+  content: "Before ";
+}
+
+.main h1::after {
+  content: " After";
+}
+
+.main h1:focus {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .main h1 {
+    color: white;
+  }
+}
+
+.main p {
+  color: #f3df05;
+}
+
+.main .button button {
+  background-color: green;
+}
+
+.main .button button:hover {
+  background-color: aqua;
+}
+
+.main .dugme {
+  background-color: blue;
+  margin-top: 3rem;
+  color: black;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  width: 20vw;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    background-color: #002d07;
+    font-size: 1.5rem;
+  }
+  .main .button button {
+    width: 100vw;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    background-color: #2d0400;
+    font-size: 1.5rem;
+  }
+  .main .button button {
+    width: 100vw;
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    background-color: #0a002d;
+    font-size: 1.5rem;
+  }
+  .main .button button {
+    width: 100vw;
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

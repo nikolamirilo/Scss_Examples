@@ -1,0 +1,15 @@
+h1 {
+  color: $textColor;
+  &::before {
+    content: "Before ";
+  }
+  &::after {
+    content: " After";
+  }
+  &:focus {
+    color: white;
+  }
+  @include media($sm) {
+    color: white;
+  }
+}
